@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-kafka-api.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-kafka-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-kafka-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-kafka-api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/connected-car-lagom.iml" filepath="$PROJECT_DIR$/.idea/connected-car-lagom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-lagom-api.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-lagom-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-lagom-api-build.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-lagom-api-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-lagom-build.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-lagom-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-lagom-impl.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-lagom-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connected-car-lagom-impl-build.iml" filepath="$PROJECT_DIR$/.idea/modules/connected-car-lagom-impl-build.iml" />
+    </modules>
+  </component>
+</project>

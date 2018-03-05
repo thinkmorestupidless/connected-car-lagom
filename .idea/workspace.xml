@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="502ca5f8-50aa-4c13-b0fa-cb851719a269" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/hydra.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarSummary.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/utils/CompletionStageUtils.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/CCarKafkaService.java" afterPath="$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/CCarKafkaService.java" />
+      <change beforePath="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java" afterPath="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java" />
       <change beforePath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java" afterPath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java" afterPath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java" />
       <change beforePath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java" afterPath="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +54,8 @@
       <file leaf-file-name="CCarStreamSubscriber.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="23" column="29" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="255">
+              <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
               <folding>
                 <element signature="e#810#824#0" expanded="true" />
               </folding>
@@ -58,35 +63,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCarStreamRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CCarStreamRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="356">
+              <caret line="50" column="85" lean-forward="false" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1785#1798#0" expanded="true" />
+                <element signature="e#3054#3065#0" expanded="true" />
+                <element signature="e#3582#3583#0" expanded="true" />
+                <element signature="e#3636#3637#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractPersistentEntityRegistry.scala" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence_2.12/srcs/lagom-javadsl-persistence_2.12-1.4.0-sources.jar!/com/lightbend/lagom/internal/javadsl/persistence/AbstractPersistentEntityRegistry.scala">
+      <file leaf-file-name="CassandraReadSide.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence-cassandra_2.12/srcs/lagom-javadsl-persistence-cassandra_2.12-1.4.0-sources.jar!/com/lightbend/lagom/javadsl/persistence/cassandra/CassandraReadSide.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="64" />
+            <state relative-caret-position="206">
+              <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="23" column="235" lean-forward="false" selection-start-line="23" selection-start-column="235" selection-end-line="23" selection-end-column="235" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="ReadSideProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence_2.12/srcs/lagom-javadsl-persistence_2.12-1.4.0-sources.jar!/com/lightbend/lagom/javadsl/persistence/ReadSideProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompletionStageUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/utils/CompletionStageUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCarServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding>
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1518#1519#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,38 +127,18 @@
       <file leaf-file-name="CCarEvent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
+            <state relative-caret-position="255">
               <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCarKafkaService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/CCarKafkaService.java">
+      <file leaf-file-name="CCarSummary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarSummary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="84" lean-forward="false" selection-start-line="0" selection-start-column="84" selection-end-line="0" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCarEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="13" column="72" lean-forward="false" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="290">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,21 +146,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCarServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java">
+      <file leaf-file-name="CCarService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="542">
+              <caret line="52" column="66" lean-forward="false" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCarState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarState.java">
+      <file leaf-file-name="TelemetryUpdate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/TelemetryUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="47" column="83" lean-forward="false" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+            <state relative-caret-position="60">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -159,6 +172,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -188,7 +202,6 @@
         <option value="$PROJECT_DIR$/connected-car-lagom-stream-impl/src/main/java/com/example/hellostream/impl/CCarStreamServiceImpl.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-stream-impl/src/main/java/com/example/hellostream/impl/CCarStreamModule.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/example/hello/impl/CCarServiceImpl.java" />
-        <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarState.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEvent.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEntity.java" />
@@ -197,12 +210,16 @@
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarModule.java" />
         <option value="$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/RawTelemetry.java" />
         <option value="$PROJECT_DIR$/build.sbt" />
-        <option value="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/TelemetryUpdate.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java" />
+        <option value="$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/CCarKafkaService.java" />
+        <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/utils/CompletionStageUtils.java" />
         <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java" />
+        <option value="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarSummary.java" />
+        <option value="$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java" />
+        <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java" />
+        <option value="$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java" />
       </list>
     </option>
   </component>
@@ -338,7 +355,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lightbend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connected-car-lagom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connected-car-lagom" type="462c0819:PsiDirectoryNode" />
+              <item name="connected-car-lagom-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lightbend" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connected-car-lagom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connected-car-lagom" type="462c0819:PsiDirectoryNode" />
+              <item name="connected-car-lagom-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lightbend" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="connected-car-lagom" type="b2602c69:ProjectViewProjectNode" />
@@ -392,6 +429,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.lightbend.connectedcar.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lightbend.utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -572,6 +612,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -582,7 +623,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Graph Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32215446" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32215446" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -664,22 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/resources/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -722,22 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="27" column="118" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/TelemetryUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence_2.12/srcs/lagom-javadsl-persistence_2.12-1.4.0-sources.jar!/com/lightbend/lagom/internal/javadsl/persistence/AbstractPersistentEntityRegistry.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -770,31 +779,23 @@
         <state relative-caret-position="-48">
           <caret line="13" column="72" lean-forward="false" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/connected-car-kafka-api/src/main/java/com/lightbend/connectedcar/api/CCarKafkaService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -807,10 +808,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/TelemetryUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/utils/CompletionStageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence_2.12/srcs/lagom-javadsl-persistence_2.12-1.4.0-sources.jar!/com/lightbend/lagom/javadsl/persistence/ReadSideProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.lightbend.lagom/lagom-javadsl-persistence-cassandra_2.12/srcs/lagom-javadsl-persistence-cassandra_2.12-1.4.0-sources.jar!/com/lightbend/lagom/javadsl/persistence/cassandra/CassandraReadSide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="72" selection-end-line="35" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamSubscriber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
           <folding>
             <element signature="e#810#824#0" expanded="true" />
           </folding>
@@ -819,9 +876,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-api/src/main/java/com/lightbend/connectedcar/api/CCarService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="52" column="66" lean-forward="false" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connected-car-lagom-impl/src/main/java/com/lightbend/connectedcar/impl/CCarStreamRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="50" column="85" lean-forward="false" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1785#1798#0" expanded="true" />
+            <element signature="e#3054#3065#0" expanded="true" />
+            <element signature="e#3582#3583#0" expanded="true" />
+            <element signature="e#3636#3637#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

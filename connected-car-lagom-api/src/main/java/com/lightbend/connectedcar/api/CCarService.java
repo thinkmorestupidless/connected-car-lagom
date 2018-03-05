@@ -6,7 +6,8 @@ import com.lightbend.lagom.javadsl.api.Descriptor;
 import com.lightbend.lagom.javadsl.api.Service;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
 import com.lightbend.lagom.javadsl.api.broker.Topic;
-import com.lightbend.lagom.javadsl.api.broker.kafka.KafkaProperties;
+
+import java.util.Collection;
 
 import static com.lightbend.lagom.javadsl.api.Service.*;
 
@@ -29,6 +30,14 @@ public interface CCarService extends Service {
 //     */
 //    ServiceCall<TelemetryUpdate, Done> useGreeting(String id);
 
+    ServiceCall<NotUsed, Collection<CCarSummary>> summaries();
+
+    ServiceCall<NotUsed, CCarSummary> summary(String id);
+
+    /**
+     * Example:
+     * curl -H "Content-Type: application/json" -X POST -d '{"powerConsumption":70,"speed":30,"motorTemp":91,"driver":"Heidi Decker","latitude":37.851040,"longitude":-122.250970,"status":"HEALTHY","batteryLevel":98}' http://localhost:9000/api/telemetry/12695
+     */
     ServiceCall<TelemetryUpdate, Done> telemetryUpdate(String id);
 
     /**
@@ -40,12 +49,12 @@ public interface CCarService extends Service {
     default Descriptor descriptor() {
         return named("connectedcarlagom")
                 .withCalls(
-//                        pathCall("/api/hello/:id", this::hello),
-//                        pathCall("/api/hello/:id", this::useGreeting)
+                        pathCall("/api/hello/", this::summaries),
+                        pathCall("/api/hello/:id", this::summary),
                         pathCall("/api/telemetry/:id", this::telemetryUpdate)
                 )
                 .withTopics(
-                        topic("connectedcar", this::rawTelemetry)
+                        topic("ccar-telemetry", this::rawTelemetry)
                 )
                 .withAutoAcl(true);
     }

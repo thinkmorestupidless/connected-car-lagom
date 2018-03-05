@@ -24,6 +24,8 @@ public class CCarStreamSubscriber {
                 .atLeastOnce(
                         Flow.<RawTelemetry>create().mapAsync(1, event -> {
 
+                            System.out.println("event -> " + event);
+
                             String id = event.getCarId();
                             int powerConsumption = 0;
 

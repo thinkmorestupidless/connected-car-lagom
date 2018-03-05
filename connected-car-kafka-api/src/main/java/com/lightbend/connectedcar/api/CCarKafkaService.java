@@ -24,7 +24,7 @@ public interface CCarKafkaService extends Service {
     default Descriptor descriptor() {
         return named("connectedcarkafka")
                 .withTopics(
-                        topic("connectedcar", this::inputEvents)
+                        topic("ccar-telemetry-raw", this::inputEvents)
                 )
                 .withAutoAcl(true);
     }

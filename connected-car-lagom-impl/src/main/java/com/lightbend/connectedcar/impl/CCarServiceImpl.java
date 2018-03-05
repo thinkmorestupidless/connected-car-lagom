@@ -24,26 +24,6 @@ public class CCarServiceImpl implements CCarService {
         persistentEntityRegistry.register(CCarEntity.class);
     }
 
-//    @Override
-//    public ServiceCall<NotUsed, String> hello(String id) {
-//        return request -> {
-//            // Look up the hello world entity for the given ID.
-//            PersistentEntityRef<CCarCommand> ref = persistentEntityRegistry.refFor(CCarEntity.class, id);
-//            // Ask the entity the Hello command.
-//            return ref.ask(new CCarCommand.Hello(id));
-//        };
-//    }
-//
-//    @Override
-//    public ServiceCall<TelemetryUpdate, Done> useGreeting(String id) {
-//        return request -> {
-//            // Look up the hello world entity for the given ID.
-//            PersistentEntityRef<CCarCommand> ref = persistentEntityRegistry.refFor(CCarEntity.class, id);
-//            // Tell the entity to use the greeting message specified.
-//            return ref.ask(new CCarCommand.UseGreetingMessage(request.message));
-//        };
-//    }
-
     @Override
     public ServiceCall<TelemetryUpdate, Done> telemetryUpdate(String id) {
         return request -> {

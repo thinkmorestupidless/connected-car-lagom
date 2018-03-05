@@ -23,7 +23,6 @@ public class CCarStreamSubscriber {
         kafka.inputEvents().subscribe()
                 .atLeastOnce(
                         Flow.<RawTelemetry>create().mapAsync(1, event -> {
-                            System.out.println("event -> " + event);
 
                             String id = event.getCarId();
                             int powerConsumption = 0;
@@ -69,11 +68,7 @@ public class CCarStreamSubscriber {
 
                             CCarCommand.UpdateTelemetry cmd = new CCarCommand.UpdateTelemetry(powerConsumption, speed, motorTemp, event.getDriver(), latitude, longitude, event.getStatus(), batteryLevel);
 
-                            System.out.println(cmd);
-
                             PersistentEntityRef<CCarCommand> ref = persistentEntityRegistry.refFor(CCarEntity.class, id);
-
-                            System.out.println(ref);
 
                             ref.ask(cmd);
 

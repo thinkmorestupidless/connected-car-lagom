@@ -1,4 +1,5 @@
-**/DS_Store
+**/.git remote add origin git@github.com:thinkmorestupidless/connected-car-lagom.gitDS_Store
+**/.DS_Store
 **/target
 ideatarget
 .target

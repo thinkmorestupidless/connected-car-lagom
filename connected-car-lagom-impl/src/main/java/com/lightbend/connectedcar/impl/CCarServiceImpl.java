@@ -37,6 +37,10 @@ public class CCarServiceImpl implements CCarService {
         persistentEntityRegistry.register(CCarEntity.class);
     }
 
+    public ServiceCall<String, String> echo() {
+        return request -> CompletableFuture.completedFuture(request.toUpperCase());
+    }
+
     public ServiceCall<NotUsed, Collection<CCarSummary>> summaries() {
         return request -> repository.summaries();
     }

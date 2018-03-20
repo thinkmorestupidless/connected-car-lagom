@@ -1,0 +1,86 @@
+{
+  "id": "/connected-car",
+  "apps": [
+    {
+      "id": "/connected-car/ingestion-service",
+      "container": {
+        "docker": {
+          "image": "thinkmorestupidless/connected-car-lagom-impl:1.0.9-SNAPSHOT",
+          "network": "BRIDGE",
+          "portMappings": [
+            {
+              "containerPort": 9000,
+              "hostPort": 0,
+              "servicePort": 10204,
+              "protocol": "tcp",
+              "name": "http"
+            },
+            {
+              "containerPort": 2551,
+              "hostPort": 0,
+              "servicePort": 10205,
+              "protocol": "udp,tcp",
+              "name": "remoting"
+            },
+            {
+              "containerPort": 19999,
+              "hostPort": 0,
+              "servicePort": 10206,
+              "protocol": "tcp",
+              "name": "akkamgmthttp"
+            }
+          ],
+          "privileged": true,
+          "parameters": [],
+          "forcePullImage": true
+        }
+      },
+      "cpus": 0.25,
+      "mem": 512.0,
+      "disk": 10,
+      "gpus": 0,
+      "instances": 2,
+      "backoffSeconds": 1,
+      "backoffFactor": 1.15,
+      "maxLaunchDelaySeconds": 3600,
+      "env": {
+        "CASSANDRA_SERVICE_NAME": "_node-0-server._tcp.cassandra.mesos",
+        "DUMMYSERVICE_BIND_IP": "0.0.0.0",
+        "DUMMYSERVICE_BIND_PORT": "$PORT0",
+        "AKKA_REMOTING_HOST": "$HOST",
+        "AKKA_REMOTING_BIND_HOST": "0.0.0.0",
+        "AKKA_REMOTING_PORT": "$PORT1",
+        "AKKA_REMOTING_BIND_PORT": "$PORT1",
+        "APPLICATION_SECRET": "H>rny8pZDxzEodVj3xFBxV2==@Qw2*"
+      },
+      "labels": {
+        "ACTOR_SYSTEM_NAME": "connected-car-system",
+        "HAPROXY_GROUP": "external",
+        "HAPROXY_0_VHOST": "connected-car.dcos",
+        "HAPROXY_0_PATH": "/api",
+        "HAPROXY_0_BACKEND_HTTP_HEALTHCHECK_OPTIONS": "  option  httpchk GET {healthCheckPath} HTTP/1.1\\r\\nHost:\\ www\n  timeout check {healthCheckTimeoutSeconds}s\n",
+        "HAPROXY_0_BACKEND_HTTP_OPTIONS":"  option forwardfor\n  no option http-keep-alive\n      http-request set-header X-Forwarded-Port %[dst_port]\n  http-request add-header X-Forwarded-Proto https if { ssl_fc }\n"
+      },
+      "healthChecks": [
+        {
+          "path": "/_status/circuit-breaker/current",
+          "portIndex": 0,
+          "protocol": "HTTP",
+          "intervalSeconds": 5
+        }
+      ],
+      "readinessChecks": [
+        {
+          "path": "/ready",
+          "portName": "http",
+          "protocol": "HTTP",
+          "gracePeriodSeconds": 300,
+          "intervalSeconds": 10,
+          "timeoutSeconds": 5,
+          "maxConsecutiveFailures": 3,
+          "ignoreHttp1xx": false
+        }
+      ]
+    }
+  ]
+}

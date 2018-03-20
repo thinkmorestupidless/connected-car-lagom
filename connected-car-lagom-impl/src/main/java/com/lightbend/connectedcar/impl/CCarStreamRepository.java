@@ -11,7 +11,6 @@ import com.lightbend.lagom.javadsl.persistence.ReadSideProcessor;
 import com.lightbend.lagom.javadsl.persistence.cassandra.CassandraReadSide;
 import com.lightbend.lagom.javadsl.persistence.cassandra.CassandraSession;
 import com.lightbend.utils.CompletionStageUtils;
-import org.pcollections.PCollection;
 import org.pcollections.PSequence;
 
 import javax.inject.Inject;
@@ -19,7 +18,6 @@ import javax.inject.Singleton;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.List;
-import java.util.UUID;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Collectors;
 

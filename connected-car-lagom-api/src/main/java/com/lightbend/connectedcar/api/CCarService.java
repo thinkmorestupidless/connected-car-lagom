@@ -30,6 +30,10 @@ public interface CCarService extends Service {
 //     */
 //    ServiceCall<TelemetryUpdate, Done> useGreeting(String id);
 
+    // curl -X POST -H "Content-Type: text/plain" -d  "hello world" http://localhost:9000/api/echo
+
+    ServiceCall<String, String> echo();
+
     ServiceCall<NotUsed, Collection<CCarSummary>> summaries();
 
     ServiceCall<NotUsed, CCarSummary> summary(String id);
@@ -49,6 +53,7 @@ public interface CCarService extends Service {
     default Descriptor descriptor() {
         return named("connectedcarlagom")
                 .withCalls(
+                        pathCall("/api/echo", this::echo),
                         pathCall("/api/hello/", this::summaries),
                         pathCall("/api/hello/:id", this::summary),
                         pathCall("/api/telemetry/:id", this::telemetryUpdate)

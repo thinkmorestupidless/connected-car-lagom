@@ -2,10 +2,10 @@
   "id": "/connected-car",
   "apps": [
     {
-      "id": "/connected-car/ingestion-service",
+      "id": "/connected-car/ingestion",
       "container": {
         "docker": {
-          "image": "thinkmorestupidless/connected-car-lagom-impl:1.0.9-SNAPSHOT",
+          "image": "thinkmorestupidless/connected-car-lagom-impl:1.0.22",
           "network": "BRIDGE",
           "portMappings": [
             {
@@ -44,7 +44,8 @@
       "backoffFactor": 1.15,
       "maxLaunchDelaySeconds": 3600,
       "env": {
-        "CASSANDRA_SERVICE_NAME": "_node-0-server._tcp.cassandra.mesos",
+        "KAFKA_SERVICE_NAME": "broker.kafka.l4lb.thisdcos.directory:9092",
+        "CASSANDRA_SERVICE_NAME": "_native-client._node-0-server._tcp.cassandra.mesos",
         "DUMMYSERVICE_BIND_IP": "0.0.0.0",
         "DUMMYSERVICE_BIND_PORT": "$PORT0",
         "AKKA_REMOTING_HOST": "$HOST",

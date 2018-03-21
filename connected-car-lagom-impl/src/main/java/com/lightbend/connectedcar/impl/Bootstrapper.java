@@ -11,8 +11,11 @@ public class Bootstrapper {
     @Inject
     public Bootstrapper(Environment environment, ActorSystem system) {
 
+//        System.out.println("Starting cluster bootstrap - " + environment.mode());
+        System.out.println("Starting cluster bootstrap");
+
         if (environment.isProd()) {
-            System.out.println("Starting cluster bootstrap");
+
             AkkaManagement.get(system).start();
             ClusterBootstrap.get(system).start();
         }

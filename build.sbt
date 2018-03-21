@@ -47,6 +47,7 @@ lazy val `connected-car-lagom-impl` = (project in file("connected-car-lagom-impl
       akkaClusterBootstrap,
       akkaDiscoveryMarathonApi,
       akkaManagementClusterHttp,
+      Library.serviceLocatorDns,
       lombok
     )
   )

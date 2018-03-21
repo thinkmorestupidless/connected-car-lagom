@@ -47,8 +47,16 @@ lazy val `connected-car-lagom-impl` = (project in file("connected-car-lagom-impl
       akkaClusterBootstrap,
       akkaDiscoveryMarathonApi,
       akkaManagementClusterHttp,
-      Library.serviceLocatorDns,
+      reactiveLibServiceLocator,
       lombok
+    ),
+    dockerBaseImage := "openjdk:8-jre-alpine",
+    dockerCommands :=
+      dockerCommands.value.flatMap {
+        // sbt-native-packager needs bash (Its ash support is basically broken)
+        case c @ Cmd("FROM", _) => Seq(c, ExecCmd("RUN", "/bin/sh", "-c", "apk add --no-cache bash && ln -sf /bin/bash /bin/sh"))
+        case v => Seq(v)
+      }
     )
   )
   .settings(lagomForkedTestSettings: _*)
@@ -98,6 +106,7 @@ val akkaClusterBootstrap = "com.lightbend.akka.management" %% "akka-management-c
 val akkaDiscoveryDns = "com.lightbend.akka.discovery" %% "akka-discovery-dns" % akkaManagementVersion
 val akkaDiscoveryMarathonApi = "com.lightbend.akka.discovery" %% "akka-discovery-marathon-api" % akkaManagementVersion
 val akkaManagementClusterHttp = "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion
+val reactiveLibServiceLocator = "com.lightbend.rp" %% "reactive-lib-service-discovery-lagom14-java" % "0.6.0"
 
 def common = Seq(
   javacOptions in compile += "-parameters"

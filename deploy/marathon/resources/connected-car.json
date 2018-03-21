@@ -5,7 +5,7 @@
       "id": "/connected-car/ingestion",
       "container": {
         "docker": {
-          "image": "thinkmorestupidless/connected-car-lagom-impl:1.0.22",
+          "image": "thinkmorestupidless/connected-car-lagom-impl:1.0.27",
           "network": "BRIDGE",
           "portMappings": [
             {

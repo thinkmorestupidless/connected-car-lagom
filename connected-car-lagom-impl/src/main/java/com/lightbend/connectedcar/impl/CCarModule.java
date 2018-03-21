@@ -7,25 +7,19 @@ import com.lightbend.connectedcar.api.CCarService;
 import com.lightbend.lagom.javadsl.api.ServiceLocator;
 import com.lightbend.lagom.javadsl.dns.DnsServiceLocator;
 import com.lightbend.lagom.javadsl.server.ServiceGuiceSupport;
-import play.Environment;
 
 /**
  * The module that binds the ConnectedcarlagomService so that it can be served.
  */
 public class CCarModule extends AbstractModule implements ServiceGuiceSupport {
 
-    private final Environment environment;
-
     @Inject
-    public CCarModule(Environment environment) {
-        this.environment = environment;
+    public CCarModule() {
+
     }
 
     @Override
     protected void configure() {
-        if (environment.isProd()) {
-            bind(ServiceLocator.class).to(DnsServiceLocator.class);
-        }
 
         bind(Bootstrapper.class).asEagerSingleton();
 

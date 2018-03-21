@@ -57,7 +57,6 @@ lazy val `connected-car-lagom-impl` = (project in file("connected-car-lagom-impl
         case c @ Cmd("FROM", _) => Seq(c, ExecCmd("RUN", "/bin/sh", "-c", "apk add --no-cache bash && ln -sf /bin/bash /bin/sh"))
         case v => Seq(v)
       }
-    )
   )
   .settings(lagomForkedTestSettings: _*)
   .dependsOn(`connected-car-lagom-api`, `connected-car-kafka-api`)
